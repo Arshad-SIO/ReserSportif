@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  color: #000000;
+}
+
+h1, h2, h3 {
+  font-family: Georgia, serif;
+}
+
+.navbar {
+  background: #ffbd59;
+  padding: 18px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: bold;
+  font-family: Georgia, serif;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  background: #c7cbc8;
+  margin: 30px auto;
+  padding: 50px;
+  width: 90%;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.search-box {
+  width: 90%;
+  margin: 25px auto;
+}
+
+.search-box input {
+  width: 320px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.terrains-section {
+  width: 90%;
+  margin: auto;
+}
+
+.terrain-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.terrain-card {
+  background: #c7cbc8;
+  border-radius: 10px;
+  padding: 18px;
+}
+
+.terrain-image {
+  height: 150px;
+  background: white;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.btn {
+  background: #5170ff;
+  color: white;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 20px;
+  cursor: pointer;
+}
