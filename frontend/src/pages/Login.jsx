@@ -65,7 +65,7 @@ function Login() {
         <button className="btn" type="submit">Se connecter</button>
 
         {message && <p>{message}</p>}
-        <p>Pas un compte ? Creez vous un nouveau compte<a href="/connexion">Se connecter</a></p>
+        <p>Pas un compte ? Creez vous un nouveau compte<a href="/inscription">Se connecter</a></p>
       </form>
     </main>
   );
