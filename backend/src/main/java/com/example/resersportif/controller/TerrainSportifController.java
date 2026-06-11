@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.RestController;
 import com.example.resersportif.entity.TerrainSportif;
 import com.example.resersportif.service.TerrainSportifService;
 
+import org.springframework.web.bind.annotation.PathVariable;
+
 @RestController
 @RequestMapping("/api/terrains")
 public class TerrainSportifController {
@@ -22,5 +24,10 @@ public class TerrainSportifController {
     @GetMapping
     public List<TerrainSportif> getAllTerrains() {
         return terrainService.getAllTerrains();
+    }
+    
+    @GetMapping("/{id}")
+    public TerrainSportif getTerrainById(@PathVariable Long id) {
+        return terrainService.getTerrainById(id);
     }
 }

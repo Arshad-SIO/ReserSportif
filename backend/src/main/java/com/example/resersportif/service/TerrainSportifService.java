@@ -19,4 +19,9 @@ public class TerrainSportifService {
     public List<TerrainSportif> getAllTerrains() {
         return terrainRepository.findAll();
     }
+
+    public TerrainSportif getTerrainById(Long id) {
+        return terrainRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException("Terrain introuvable."));
+    }
 }
