@@ -117,3 +117,33 @@ h1, h2, h3 {
   border-radius: 6px;
   font-size: 15px;
 }
+
+.detail-page {
+  width: 90%;
+  margin: 50px auto;
+}
+
+.detail-card {
+  background: #c7cbc8;
+  border-radius: 12px;
+  padding: 35px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 35px;
+  align-items: center;
+}
+
+.detail-image {
+  height: 320px;
+  background: white;
+  border-radius: 10px;
+}
+
+.detail-info h1 {
+  margin-bottom: 25px;
+}
+
+.detail-info p {
+  font-size: 18px;
+  margin: 15px 0;
+}
